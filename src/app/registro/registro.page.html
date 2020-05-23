@@ -1,9 +1,50 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>registro</ion-title>
+    <ion-title>Regsitro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <img src="assets/img/echomercio_logo.png" class="main-logo" />
+  <form>
+          <ion-item class="form">
+            <ion-label position="floating">Nombres</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+
+          <ion-item class="form">
+            <ion-label position="floating">Apellidos</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+
+          <ion-item class="form">
+            <ion-label position="floating">Correo electrónico</ion-label>
+            <ion-input type="email" required></ion-input>
+          </ion-item>
+
+          <ion-item class="form">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" required></ion-input>
+          </ion-item>
+
+          <ion-item class="form">
+            <ion-label position="floating">Confirmar contraseña</ion-label>
+            <ion-input type="password" required></ion-input>
+          </ion-item>
+
+          <ion-item class = "form">
+            <ion-checkbox color="danger"></ion-checkbox>
+              <ion-label> He leído y acepto las condiciones de pertenecer a la comunidad ECHO.</ion-label>
+          </ion-item>
+
+          <ion-item class = "form">
+            <ion-checkbox color="danger"></ion-checkbox>
+              <ion-label> Deseo recibir de la comunidad ECHO a mi correo.</ion-label>
+          </ion-item>
+  </form>
+
+    <div>
+      <ion-button (click)="onregistro(registroForm)" type="submit" expand="block">Crear cuenta</ion-button>
+    </div>
 
 </ion-content>

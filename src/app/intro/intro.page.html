@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Presentación
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen ="true">
+  <ion-slides>
+    <ion-slide>
+      <img src="assets/img/echomercio_logo.png" class="slide-image" />
+      <h2 class="slide-title">
+        Bienvenido a ECHO. <br> Red de Economia Ciruclar en Mexico.
+      </h2>
+      <p>
+        <b>ECHO</b> es una plataforma web y app para Android y Apple donde podras aprender sobre y participar en la economia circular de tu ciudad.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/placeholder_imagen.png" class="slide-image" />
+      <h2 class="slide-title">¿Que es la economia circular?</h2>
+        <p>La <b>economia circular</b> se refiere a modos de consumo que procuran:<br>
+          1. Consumo responsable que reduzca la introduccion de materiales nuevos<br>
+          2. Produccion responsable con materiales reutilizables o reutilizados<br>
+          3. Reutilizar, reciclar y reparar productos<br>
+        </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/placeholder_imagen.png" class="slide-image" />
+      <h2 class="slide-title">¿Como funciona ECHO?</h2>
+      <p>
+        <b>ECHO</b> es una plataforma donde econtraras: <br>
+        1. Mapa y derectorio comunidades de economia circular<br>
+        2. Red social para participar en la economía ciruclar<br>
+        3. Contenido interesante y educativo sobre la <b>economia circular</b><br>
+        4. Informacion sobre la <b>economia circular</b> en tu ciudad<br>
+      </p>
+
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/echomercio_logo.png" class="slide-image" />
+      <h2 class="slide-title">¿Estas listo para unirte a <b>ECHO</b>?</h2>
+      <ion-button fill="clear" [routerLink]="['/login']">
+        Entra
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

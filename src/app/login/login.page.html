@@ -5,6 +5,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="goToRegister()" class="primaryBtn">Registrame</ion-button>
-  <ion-button (click)="doLogin()">Acceder</ion-button>
+    <img src="assets/img/echomercio_logo.png" alt="Echomercio Logo" class="main-logo">
+<form>
+
+  <ion-item class="form">
+    <ion-label position="floating">Usuario o correo electrónico</ion-label>
+    <ion-input type="email" required></ion-input>
+  </ion-item>
+
+  <ion-item class="form">
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+
+</form>
+    <ion-button (click)="doLogin()" expand="block">Entrar</ion-button>
+    <ion-button [routerLink]="['/registro']" expand="block">No tengo cuenta</ion-button>
+    <br><a [routerLink]="['/recupera_cuenta']" class="form">¿Olvidaste tu contraseña?</a>
 </ion-content>

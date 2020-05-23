@@ -24,3 +24,61 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+//DIVS GLOBALES
+
+#container p {
+  color: #8c8c8c;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+// CLASES GLOBALES
+
+.form{
+  color: #8c8c8c;
+  font-size: 12px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.main-logo
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  max-width: 90%;
+  height: auto;
+}
+
+.registerBtn {
+  background-color: #dd2659;
+  border: none;
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.loginBtn {
+  background-color: #ffff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
